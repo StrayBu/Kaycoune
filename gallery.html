@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - kaycoune</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Updated: Jun 06 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@kaycoune.org</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+234-803-582-2977</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Kaycoune</h1>
+          <span></span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="test.html">About</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="donate-services.html">Donate</a></li>
+            <li><a href="contact.html"> <span>Contact</span>
+            <li><a href="service-details.html"><span>Services</span> 
+            <li><a href="faq.html">FAQ</a></li>
+           
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+         
+          </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 70px; /* To avoid overlap with navbar */
+        }
+        .gallery img {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+        }
+        .arrow.left {
+            left: 10px;
+        }
+        .arrow.right {
+            right: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="gallery">
+    <img src="assets/img/gallery-images/g-0.jpg" alt="Picture 0" onclick="openLightbox(0)">
+    <img src="assets/img/gallery-images/g-1.jpg" alt="Picture 2" onclick="openLightbox(1)">
+    <img src="assets/img/gallery-images/g-2.jpg" alt="Picture 3" onclick="openLightbox(2)">
+    <img src="assets/img/gallery-images/g-3.jpg" alt="Picture 4" onclick="openLightbox(3)">
+    <img src="assets/img/gallery-images/g-4.jpg" alt="Picture 5" onclick="openLightbox(4)">
+    <img src="assets/img/gallery-images/g-5.jpg" alt="Picture 6" onclick="openLightbox(5)">
+    <img src="assets/img/gallery-images/g-6.jpg" alt="Picture 7" onclick="openLightbox(6)">
+    <img src="assets/img/gallery-images/g-7.jpg" alt="Picture 8" onclick="openLightbox(7)">
+    <img src="assets/img/gallery-images/g-8.jpg" alt="Picture 9" onclick="openLightbox(8)">
+    <img src="assets/img/gallery-images/g-9.jpg" alt="Picture 10" onclick="openLightbox(9)">
+    <img src="assets/img/gallery-images/g-10.jpg" alt="Picture 11" onclick="openLightbox(10)">
+    <img src="assets/img/gallery-images/g-11.jpg" alt="Picture 12" onclick="openLightbox(11)">
+    <img src="assets/img/gallery-images/g-12.jpg" alt="Picture 13" onclick="openLightbox(12)">
+    <img src="assets/img/gallery-images/g-13.jpg" alt="Picture 14" onclick="openLightbox(13)">
+    <img src="assets/img/gallery-images/g-14.jpg" alt="Picture 15" onclick="openLightbox(14)">
+    <img src="assets/img/gallery-images/g-15.jpg" alt="Picture 16" onclick="openLightbox(15)">
+    <img src="assets/img/gallery-images/g-16.jpg" alt="Picture 17" onclick="openLightbox(16)">
+    <img src="assets/img/gallery-images/g-17.jpg" alt="Picture 18" onclick="openLightbox(17)">
+    <img src="assets/img/gallery-images/g-18.jpg" alt="Picture 19" onclick="openLightbox(18)">
+    <img src="assets/img/gallery-images/g-19.jpg" alt="Picture 20" onclick="openLightbox(19)">
+    <img src="assets/img/gallery-images/g-20.jpg" alt="Picture 21" onclick="openLightbox(20)">
+    <img src="assets/img/gallery-images/g-21.jpg" alt="Picture 22" onclick="openLightbox(21)">
+    <img src="assets/img/gallery-images/g-22.jpg" alt="Picture 23" onclick="openLightbox(22)">
+    <img src="assets/img/gallery-images/g-23.jpg" alt="Picture 24" onclick="openLightbox(23)">
+    <img src="assets/img/gallery-images/g-24.jpg" alt="Picture 25" onclick="openLightbox(24)">
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <span class="arrow left" onclick="prevPicture()">&#10094;</span>
+    <img id="lightbox-img" src="">
+    <span class="arrow right" onclick="nextPicture()">&#10095;</span>
+</div>
+
+<script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    let currentImageIndex = 0;
+
+    function openLightbox(index) {
+        currentImageIndex = index;
+        lightboxImg.src = images[index].src;
+        lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    function nextPicture() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        lightboxImg.src = images[currentImageIndex].src;
+    }
+
+    function prevPicture() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentImageIndex].src;
+    }
+</script>
+
+</body>
+</html>
+ 
